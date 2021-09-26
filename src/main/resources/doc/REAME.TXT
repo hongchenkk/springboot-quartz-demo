@@ -1,1 +1,3 @@
 参考文章：https://juejin.cn/post/6987630541386285092
+
+初始化脚本的时候，可以将数据库的字符设置为utf-8 子集为utf8-generate-ci
