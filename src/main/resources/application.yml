@@ -11,6 +11,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
 
   # 定时调度配置，包括定时数据源的配置
+  #官网配置文档：https://github.com/quartz-scheduler/quartz/blob/master/docs/configuration.adoc#main-configuration-configuration-of-primary-scheduler-settings-transactions
   quartz:
     # 相关属性配置
     properties:
