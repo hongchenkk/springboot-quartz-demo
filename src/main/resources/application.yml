@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/springboot-quartz-demo?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/springboot-quartz-demo-application?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 83956276
     type: com.alibaba.druid.pool.DruidDataSource
@@ -21,7 +21,7 @@ spring:
           dataSource:
             globalJobDataSource:
               # URL必须大写
-              URL: jdbc:mysql://127.0.0.1:3306/quartz-config?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+              URL: jdbc:mysql://127.0.0.1:3306/springboot-quartz-demo-config?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
               driver: com.mysql.cj.jdbc.Driver
               maxConnections: 5
               username: root
