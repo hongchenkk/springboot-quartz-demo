@@ -49,11 +49,18 @@
         </dependency>
         
 		<!-- druid -->
-        <dependency>
+<!--    <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.11</version>
-        </dependency>
+        </dependency> -->
+        
+        <!-- druid连接池 -->
+		<dependency> 
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>druid-spring-boot-starter</artifactId>
+		    <version>1.1.9</version>
+		</dependency>
 
 		<dependency>
 			<groupId>mysql</groupId>
