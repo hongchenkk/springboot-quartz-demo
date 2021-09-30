@@ -86,7 +86,8 @@ public class QuartzController {
      * http://localhost:23080/job/pause?jobGroup=STANDARD_JOB_GROUP&jobName=时间通知任务
      */
 	@PostMapping("/pause")
-	public void pauseJob(@RequestParam("jobGroup") String jobGroup, @RequestParam("jobName") String jobName) throws SchedulerException {
+	public void pauseJob(@RequestParam("jobGroup") String jobGroup, @RequestParam("jobName") String jobName)
+			throws SchedulerException {
 		jobHandler.pauseJob(jobGroup, jobName);
 	}
 	
@@ -95,7 +96,8 @@ public class QuartzController {
      * http://localhost:23080/job/continue?jobGroup=STANDARD_JOB_GROUP&jobName=时间通知任务
      */
 	@PostMapping("/continue")
-	public void continueJob(@RequestParam("jobGroup") String jobGroup, @RequestParam("jobName") String jobName) throws SchedulerException {
+	public void continueJob(@RequestParam("jobGroup") String jobGroup, @RequestParam("jobName") String jobName)
+			throws SchedulerException {
 		jobHandler.continueJob(jobGroup, jobName);
 	}
 	
@@ -104,7 +106,8 @@ public class QuartzController {
      * http://localhost:23080/job/delete?jobGroup=STANDARD_JOB_GROUP&jobName=时间通知任务
      */
 	@PostMapping("/delete")
-	public boolean deleteJob(@RequestParam("jobGroup") String jobGroup, @RequestParam("jobName") String jobName) throws SchedulerException {
+	public boolean deleteJob(@RequestParam("jobGroup") String jobGroup, @RequestParam("jobName") String jobName)
+			throws SchedulerException {
 		return jobHandler.deleteJob(jobGroup, jobName);
 	}
 	
